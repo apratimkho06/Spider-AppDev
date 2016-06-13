@@ -17,7 +17,8 @@ public class ActivityC extends AppCompatActivity {
         setContentView(R.layout.activity_c);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
         String name = getIntent().getStringExtra(MainActivity.NAME);
 
         TextView textView = (TextView) findViewById(R.id.textView2);
